@@ -55,8 +55,3 @@ class Jugador(Base):
                 self.nombre, self.dorsal, self.posicion)
 
 Base.metadata.create_all(engine)
-
-
-
-
-
