@@ -19,24 +19,6 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 # Obtener un listado de todos los registros 
-# de la tabla Club, que tengan al menos 
-# un jugador con el nombre que tenga incluida la cadena “Da”
-
-# para la solución se hace uso del método 
-# join aplicado a query
-
-clubs = session.query(Club).join(Jugador).\
-        filter(Jugador.nombre.like("%Da%")).all()
-# print(clubs)
-print(clubs)
-"""
-Consulta 1 
-Club: nombre=Barcelona deporte=Fútbol fundación=1920
-"""
-# for e in clubs: 
-#    print(e) 
-
-# Obtener un listado de todos los registros 
 # de la tabla Club y Jugador, que tengan al menos 
 # un jugador con el nombre que tenga incluida la cadena “Da”
 
