@@ -21,8 +21,8 @@ session = Session()
 # Obtener todos los registros de
 # la entidad estudiante (clase Estudiante)
 
-# estudiantes = session.query(Estudiante).all()
-# print(estudiantes)
+estudiantes = session.query(Estudiante).all()
+print(estudiantes)
 
 # print("--------------------------------------")
 # Obtener todos los registros de la clase Modulo
